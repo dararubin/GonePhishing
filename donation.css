@@ -1,0 +1,23 @@
+#screen {
+	width: 320px;
+	height: 540px;
+	border-radius: 10px;
+	background-color: #82cdf2;
+	opacity: .6;
+}
+
+#logo {
+	font-family: Arial;
+	font-size: 22pt;
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+#user {
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+#worker {
+	text-align: center;
+}
