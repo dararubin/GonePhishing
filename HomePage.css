@@ -1,0 +1,17 @@
+.donation {
+	text-align: center;
+	width: 400px;
+	height:200px;
+	font-size: 80px;
+}
+.center {
+	width:300px;
+	height:50px;
+	font-size:30;
+}
+.space {
+	height:300px;
+}
+.centered {
+	text-align: center
+}
