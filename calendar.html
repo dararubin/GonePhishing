@@ -7,15 +7,18 @@
 	<nav class="navbar navbar-inverse navbar-static-top">
       <div class="container">
         <div class="navbar-header">
-          <a class="navbar-brand" href="#">iDonate</a>
+          <a class="navbar-brand" href="#" id="title">iDonate</a>
         </div>
       </div>
     </nav>
 
 	<div class="container">
-
   <style>
 
+  #title {
+    color: #ec2227;
+  }
+  
     body {
       line-height: 1;
       font-family: 'PT Sans', sans-serif;
@@ -60,6 +63,7 @@
       width: 100%;
       height: 100%;
     }
+    
     td {
       line-height: 22px;
       text-align: center;
@@ -81,18 +85,13 @@
 
     #cancel, #continue {
       margin: 15px;
-      background-color: #ddd;
-      font-size: 12pt;
-      border-radius: 5px;
-      border: 0;
-      font-weight: 700;
-      height: 30px;
+      border-style: solid;
+      border-width: 1px
     }
 
     .bottonButtons{ 
       text-align: center;
     }
-
   </style>
 
 <header id="instructions">PICK A DATE</header>
@@ -161,8 +160,8 @@
 </table>
   
   <div class="bottonButtons">
-    <button id="cancel">CANCEL</button>
-    <button id="continue">CONTINUE</button>
+    <button id="cancel" class="btn-lg btn-default">Cancel</button>
+    <button id="continue" class="btn-lg btn-default">Continue</button>
   </div>
 
   </div>
