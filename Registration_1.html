@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+<body>
+	<nav class="navbar navbar-inverse navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">iDonate</a>
+        </div>
+      </div>
+    </nav>
+
+	<div class="container">
+
+    <style>
+
+    #instructions {
+      font-family: 'PT Sans Narrow', sans-serif;
+      font-size: 24px;
+      font-weight: 500;
+      text-align: center;
+      margin: 0 0 20px;
+    }
+
+    button {
+      font-family: 'PT Sans', sans-serif;
+      height: 30px;
+      background-color: #ddd;
+      margin: 4px;
+      font-size: 12pt;
+      border-radius: 5px;
+      border: 0;
+      background-color: #ddd
+    }
+
+    #cancel, #continue {
+      margin: 15px;
+      background-color: #ddd;
+      font-size: 12pt;
+      border-radius: 5px;
+      border: 0;
+      font-weight: 700;
+      height: 30px;
+    }
+
+    .bottonButtons{ 
+      text-align: center;
+    }
+
+    h1 {
+      font-family: 'PT Sans Narrow', sans-serif;
+      font-size: 18px;
+      font-weight: 700;
+      text-align: center;
+      margin: 0 0 10px;
+    }
+
+    .testbox {
+      margin: 20px auto;
+      width: 343px; 
+      height: 295px;
+    }
+
+    form{
+      margin: 0 40px;
+    }
+
+    input[type=text]{
+      font-family: 'PT Sans Narrow', sans-serif;
+      width: 200px; 
+      height: 38px; 
+      border: solid 1px #cbc9c9;
+      margin-left: -5px;
+      margin-top: 10px; 
+      padding-left: 10px;
+      border-radius: 4px;
+    }
+
+    select {
+      font-family: 'PT Sans Narrow', sans-serif;
+      width: 200px; 
+      height: 38px; 
+      border: solid 1px #cbc9c9;
+      margin-left: -5px;
+      margin-top: 12px; 
+      padding-left: 10px;
+      border-radius: 4px;
+    }
+
+    #icon {
+      width: 40px;
+      background-color: #8C8C8C;
+      padding: 8px 0px 8px 15px;
+      margin-left: 15px;
+      margin-right: 5px;
+      border-radius: 4px;
+      color: white;
+    }
+
+    #confirm_check {
+      font-family: 'PT Sans Narrow', sans-serif;
+      text-align: center;
+    }
+
+    #my_check{
+      font-weight:normal;
+    }
+
+    input[type=checkbox] {
+      visibility: hidden;
+    }
+
+    input[type=checkbox] + label:before {
+      content: "";  
+      display: inline-block;  
+      width: 15px;  
+      height: 15px;  
+      vertical-align:middle;
+      margin-right: 8px;  
+      background-color: #ddd;
+      border-radius: 4px;
+    }
+
+    input[type=checkbox]:checked + label:before {
+      content:"\2714";
+      color:white;
+      background-color: #8C8C8C; 
+      text-align:center;
+      line-height:15px;
+    }
+  </style>
+
+  <header id="instructions">PICK UP INFORMATION</header>
+
+  <div class="testbox">
+    <h1>Personal Information</h1>
+    <h2> </h2>
+  <form action="/">
+    <label id="icon"><i class="fa fa-user"></i></label>
+    <input type="text" placeholder="First Name *" required/>
+    <label id="icon"><i class="fa fa-user"></i></label>
+    <input type="text" placeholder="Last Name *" required/>
+    <label id="icon"><i class="fa fa-phone"></i></label>
+    <input type="text" placeholder="Phone Number *" required/>
+    <label id="icon"><i class="fa fa-envelope"></i></label>
+    <input type="text" placeholder="Email *"required/>
+    <label id="icon"><i class="fa fa-heart"></i></label>
+    <select required>
+       <option>Select Donation Category *</option>
+       <option>Clothing</option>
+       <option>Food</option>
+       <option>Books</option>
+       <option>School Supplies</option>
+       <option>Furniture</option>
+       <option>Misc. Items</option>
+    </select>
+    </form>
+</div>
+
+  <div id="confirm_check">
+    <input type="checkbox" id="cb2" name="cb" value="" checked>
+    <label id="my_check" for="cb2">Send me an email reminder about my donation.</label><br>
+  </div>
+  
+  <div class="bottonButtons">
+    <button id="cancel">CANCEL</button>
+    <button id="continue">CONTINUE</button>
+  </div>
+
+  </div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+</body>
