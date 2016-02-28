@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
 	<nav class="navbar navbar-inverse navbar-static-top">
-      <div class="container">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="#" id="title">iDonate</a>
-        </div>
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="./HomePage.html" id="title">iDonate</a>
       </div>
-    </nav>
+    </div>
+  </nav>
 
-	<div class="container">
-  <style>
+  <div class="container">
+    <style>
 
-  #title {
-    color: #ec2227;
-  }
-  
+    #title {
+      color: #ec2227;
+    }
+
     body {
       line-height: 1;
       font-family: 'PT Sans', sans-serif;
@@ -92,81 +92,84 @@
     .bottonButtons{ 
       text-align: center;
     }
-  </style>
+    </style>
 
-<header id="instructions">PICK A DATE</header>
+    <header id="instructions">PICK A DATE</header>
 
-  <header id="date">
-    <button id="left"><</button>
-    <h2>February 2016</h2>
-    <button id="right">></button>
-  </header>
+    <header id="date">
+      <button id="left"><</button>
+      <h2>February 2016</h2>
+      <button id="right">></button>
+    </header>
 
-<table id="Calendar">
-  <tr id="Month">
-    <td id="Sunday">Su</td>
-    <td id="Monday">Mo</td>
-    <td id="Tuesday">Tu</td>
-    <td id="Wednesday">We</td>
-    <td id="Thursday">Th</td>
-    <td id="Friday">Fr</td>
-    <td id="Saturday">Sa</td>
-  </tr>
-  <tr>
-    <td id="d1">31</td>
-    <td id="d2">1</td>
-    <td id="d3">2</td>
-    <td id="d4">3</td>
-    <td id="d5">4</td>
-    <td id="d6">5</td>
-    <td id="d7">6</td>
-  </tr>
-  <tr>
-    <td id="d8">7</td>
-    <td id="d9">8</td>
-    <td id="d10">9</td>
-    <td id="d11">10</td>
-    <td id="d12">11</td>
-    <td id="d13">12</td>
-    <td id="d14">13</td>
-  </tr>
-  <tr>
-    <td id="d15">14</td>
-    <td id="d16">15</td>
-    <td id="d17">16</td>
-    <td id="d18">17</td>
-    <td id="d19">18</td>
-    <td id="d20">19</td>
-    <td id="d21">20</td>
-  </tr>
-  <tr>
-    <td id="d22">21</td>
-    <td id="d23">22</td>
-    <td id="d24">23</td>
-    <td id="d25">24</td>
-    <td id="d26">25</td>
-    <td id="d27">26</td>
-    <td id="d28">27</td>
-  </tr>
-  <tr>
-    <td id="d29">28</td>
-    <td id="d30">29</td>
-    <td id="d31">1</td>
-    <td id="d32">2</td>
-    <td id="d33">3</td>
-    <td id="d34">4</td>
-    <td id="d35">5</td>
-  </tr>
-</table>
-  
-  <div class="bottonButtons">
-    <button id="cancel" class="btn-lg btn-default">Cancel</button>
-    <button id="continue" class="btn-lg btn-default">Continue</button>
-  </div>
+    <table id="Calendar">
+      <tr id="Month">
+        <td id="Sunday">Su</td>
+        <td id="Monday">Mo</td>
+        <td id="Tuesday">Tu</td>
+        <td id="Wednesday">We</td>
+        <td id="Thursday">Th</td>
+        <td id="Friday">Fr</td>
+        <td id="Saturday">Sa</td>
+      </tr>
+      <tr>
+        <td id="d1">31</td>
+        <td id="d2">1</td>
+        <td id="d3">2</td>
+        <td id="d4">3</td>
+        <td id="d5">4</td>
+        <td id="d6">5</td>
+        <td id="d7">6</td>
+      </tr>
+      <tr>
+        <td id="d8">7</td>
+        <td id="d9">8</td>
+        <td id="d10">9</td>
+        <td id="d11">10</td>
+        <td id="d12">11</td>
+        <td id="d13">12</td>
+        <td id="d14">13</td>
+      </tr>
+      <tr>
+        <td id="d15">14</td>
+        <td id="d16">15</td>
+        <td id="d17">16</td>
+        <td id="d18">17</td>
+        <td id="d19">18</td>
+        <td id="d20">19</td>
+        <td id="d21">20</td>
+      </tr>
+      <tr>
+        <td id="d22">21</td>
+        <td id="d23">22</td>
+        <td id="d24">23</td>
+        <td id="d25">24</td>
+        <td id="d26">25</td>
+        <td id="d27">26</td>
+        <td id="d28">27</td>
+      </tr>
+      <tr>
+        <td id="d29">28</td>
+        <td id="d30">29</td>
+        <td id="d31">1</td>
+        <td id="d32">2</td>
+        <td id="d33">3</td>
+        <td id="d34">4</td>
+        <td id="d35">5</td>
+      </tr>
+    </table>
 
-  </div>
+    <div class="bottonButtons">
+      <a href="map.html">
+        <button id="cancel" class="btn-lg btn-default">Cancel</button>
+      </a>
+      <a href="times.html">
+        <button id="continue" class="btn-lg btn-default">Continue</button></a>
+      </div>
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
+    </div>
 
-</body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+  </body>
