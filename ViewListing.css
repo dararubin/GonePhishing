@@ -1,0 +1,19 @@
+img {
+	margin-top: 10px;
+	float: left;
+	height: 90px;
+	margin-right: 25px;
+}
+
+h2 {
+	margin-top: 20px;
+	margin-left: 25px;
+}
+
+h3 {
+	margin-top: 100px;
+	margin-left: 320px;
+}
+.editable{
+	contenteditable="true";
+}
