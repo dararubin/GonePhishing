@@ -2,20 +2,21 @@
 <html>
 <head>
 <link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="map-info.css" rel="stylesheet">
 </head>
 <body>
   <nav class="navbar navbar-inverse navbar-static-top">
     <div class="container">
       <div class="navbar-header">
-        <a class="navbar-brand glyphicon glyphicon-menu-left" href="#">Back</a>
+        <a class="navbar-brand pt-sans" id="title" href="./HomePage.html">iDonate</a>
       </div>
     </div>
   </nav>
 
-	<div class="container" id="content">
+	<div class="container center pt-sans" id="content">
     <div class="jumbotron">
       <h2><u>Evanston School Children Clothing Association</u></h2>
-      <p><i>"No child should miss a day of school for need of warm, sturdy clothing."</i></p>
+      <p><i>&quot;No child should miss a day of school for need of warm, sturdy clothing.&quot;</i></p>
     </div>
     <div class="row">
       <div class="col-md-4">
@@ -35,8 +36,9 @@
         <p>Phone: 847-291-7384</p>
       </div>
     </div>
-
-    <button class="btn btn-primary" type="button">Schedule pickup</button>
+    <div>
+      <button class="btn btn-primary" type="button" onclick="location.href='./calendar.html'">Schedule pickup</button>
+    </div>
   </div>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
