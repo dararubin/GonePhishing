@@ -7,7 +7,7 @@
 	<nav class="navbar navbar-inverse navbar-static-top">
       <div class="container">
         <div class="navbar-header">
-          <a class="navbar-brand" href="#">iDonate</a>
+          <a class="navbar-brand" href="#" id="title">iDonate</a>
         </div>
       </div>
     </nav>
@@ -15,12 +15,13 @@
 	<div class="container">
   
   <style>
-    body {
-      line-height: 1;
-      font-family: 'PT Sans', sans-serif;
-    }
 
-    button {
+  #title {
+    color: #ec2227;
+  }
+
+    .times button {
+      font-family: 'PT Sans', sans-serif;
       width: 55px;
       height: 30px;
       background-color: #ddd;
@@ -29,18 +30,6 @@
       border-radius: 5px;
       border: 0;
       background-color: #ddd
-    }
-
-    #cancel, #continue {
-      margin: 15px;
-      font-weight: 700;
-    }
-    #cancel {
-      width: 65px;
-    }
-
-    #continue {
-      width: 84px;
     }
 
     .bottonButtons{ 
@@ -72,11 +61,17 @@
       text-align: center;
     }
 
+    #cancel, #continue {
+      margin: 15px;
+      border-style: solid;
+      border-width: 1px
+    }
+
   </style>
 
 <header id="instructions">PICK A TIME</header>
 <div id="display">Thu 2/18</div>
-<div id="times">
+<div class="times">
     <button id="t1">8:00</button>
     <button id="t2">8:15</button>
     <button id="t3">8:30</button>
@@ -131,8 +126,8 @@
 
 
   <div class="bottonButtons">
-    <button id="cancel">CANCEL</button>
-    <button id="continue">CONTINUE</button>
+    <button id="cancel" class="btn-lg btn-default">Cancel</button>
+    <button id="continue" class="btn-lg btn-default">Continue</button>
   </div>
 
   </div>

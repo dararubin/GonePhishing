@@ -1,8 +1,18 @@
-#search-button {
+body {
+	font-family: "PT sans";
+	text-align: center;
+
+	}
+
+	#search-button {
 	margin-top: 50px;
 }
 
 h2 {
 	margin-top: 100px;
 	margin-bottom: 50px;
+}
+
+#title {
+	color: #ec2227;
 }
