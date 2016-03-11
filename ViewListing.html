@@ -2,11 +2,10 @@
 <html>
 <head>
   <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link href="ViewListing.css" type="text/css" rel="stylesheet" media="all" />
   <script src="ViewListing.js" type="text/javascript"></script>
 </head>
 <body>
-	<nav class="navbar navbar-inverse navbar-fixed-top">
+  <nav class="navigation">
     <div class="container">
       <div class="navbar-header">
         <a class="navbar-brand" href="./HomePage.html" id="title" >iDonate</a>
@@ -14,17 +13,70 @@
     </div>
   </nav>
 
+  <style>
+
+img {
+  margin-top: 10px;
+  float: left;
+  height: 90px;
+}
+
+.editable{
+  contenteditable="true";
+
+}
+
+ul {
+  list-style-position: inside;
+} 
+
+nav {
+      background: #93CBD2;
+      margin-bottom: 15px;
+      font-family: 'Century Gothic', sans-serif;
+    }
+
+    a {
+      color: white;
+    }
+
+    body {
+      font-family: 'Century Gothic', sans-serif;
+    }
+
+    #upperhalf {
+      text-align: center;
+    }
+
+    #edit-button {
+      float: right;
+      font-family: 'Century Gothic', sans-serif;
+      height: 30px;
+      margin: 4px;
+      font-size: 12pt;
+      border-radius: 5px;
+      border: 0;
+      color:white;
+      background-color: #F2704F
+    }
+
+  </style>
+
   <div class="container">
+  <div class="sizebox">
+     <div id="upperhalf">
     <h3>
-        <input id="edit-button" class="btn btn-lg btn-default" type="button" value="Edit" onclick="edit();"></input>
+        <input id="edit-button" type="button" value="Edit" onclick="edit();"></input>
     </h3>
     <img src="location 3.jpg" alt="Donation Logo" >
-    <h2> In Kind Donations </h2> 
+    <h2> IN KIND DONATIONS </h2> 
     <p class="editable"> 1483 Maple Ave., Evanston, IL 60201 </p></br>
     <h4> Description: </h4>
     <p class="editable"> In Kind Donations is a non-profit organization </br>
       that serves the local Evanston community.   </br>
     </p>
+    </div>
+    <div style="width: 50%; margin-left: auto; margin-right: auto;">
     <h4> We Accept: </h4>
     <ul class="editable">
       <li> Clothing, all sizes/types</li>
@@ -41,9 +93,9 @@
       <li> Winter hats</li>
       <li> Boots for all ages </li>
     </ul>
+    </div>
+  </div>
   </div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
-
-</body>

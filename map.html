@@ -2,22 +2,107 @@
 <html>
 <head>
 <link href="css/bootstrap.min.css" rel="stylesheet">
-<link href="map.css" rel="stylesheet">
 </head>
 <body>
-	<nav class="navbar navbar-inverse navbar-static-top">
+	<nav class="navigation">
       <div class="container">
         <div class="navbar-header">
           <a class="navbar-brand pt-sans" href="./HomePage.html" id="title">iDonate</a>
         </div>
       </div>
     </nav>
-	<div class="container pt-sans centered" id="content">
+	<div class="container centered" id="content">
+  <style>
+
+#map-region {
+  margin-top: 12px;
+}
+
+#filters {
+  margin-top: 12px;
+}
+
+#filters {
+  outline-color: black; 
+}
+
+#info {
+  margin-left: 2px;
+}
+
+.filt-button {
+  margin-bottom: 2px;
+  margin-right: 2px;
+}
+
+.dropdown-menu {
+  left: 50%;
+  right: auto;
+  text-align: center;
+  transform: translate(-50%, 0);
+}
+
+.centered {
+  text-align: center
+}
+
+.centerImage
+{
+  margin:auto;
+  display:block;
+}
+
+body {
+  font-family: 'Century Gothic', sans-serif;
+}
+
+nav {
+      background: #93CBD2;
+      margin-bottom: 15px;
+      font-family: 'Century Gothic', sans-serif;
+    }
+
+    a {
+      color: white;
+    }
+
+button {
+      height: 30px;
+      margin: 4px;
+      font-size: 12pt;
+      border-radius: 5px;
+      border: 0;
+      color:white;
+      background-color: #F2704F
+    }
+
+    #instructions {
+      font-family: 'Century Gothic', sans-serif;
+      font-size: 24px;
+      font-weight: 500;
+      text-align: center;
+      margin: 0 0 20px;
+    }
+
+    h1 {
+      font-family: 'PT Sans', sans-serif;
+      font-size: 18px;
+      font-weight: 700;
+      text-align: center;
+      margin: 0 0 10px;
+    }
+
+    #close {
+      background-color: #93CBD2
+    }
+
+  </style>
     <div>
-      <h2>Filter centers by donation item</h2>
+    <header id="instructions">CLICK ON A DONATION CENTER</header>
+      <h1>Filter by Selecting a Donation Category</h1>
       <div class="dropdown">
-        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMap" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-          Select Item
+        <button type="button" id="dropdownMap" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+          Donation Category
           <span class="caret"></span>
         </button>
         <ul class="dropdown-menu" aria-labelledby="dropdownMap">
@@ -49,8 +134,8 @@
               <p>Accepts: Gently used and school clothing and coats</p>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary" onclick="location.href='./map-info.html';">More info</button>
+              <button type="button" id="close" data-dismiss="modal">Close</button>
+              <button type="button" onclick="location.href='./map-info.html';">More info</button>
             </div>
           </div>
         </div>

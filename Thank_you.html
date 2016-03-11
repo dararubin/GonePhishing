@@ -4,7 +4,7 @@
 <link href="css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-  <nav class="navbar navbar-inverse navbar-static-top">
+  <nav class="navigation">
       <div class="container">
         <div class="navbar-header">
           <a class="navbar-brand" href="./HomePage.html" id="title">iDonate</a>
@@ -16,44 +16,56 @@
 
     <style>
 
-     #title {
-    color: #ec2227;
-  }
+    nav {
+      background: #93CBD2;
+      margin-bottom: 15px;
+      font-family: 'Century Gothic', sans-serif;
+    }
+
+    a {
+      color: white;
+    }
 
     #instructions {
-      font-family: 'PT Sans Narrow', sans-serif;
+      font-family: 'Century Gothic', sans-serif;
       font-size: 24px;
-      font-weight: 500;
       text-align: center;
       margin: 0 0 20px;
     }
 
     #home {
-      margin: 15px;
+      margin: 4px;
+      height: 30px;
+      width: 65px;
       border-style: solid;
-      border-width: 1px
+      border-width: 1px;
+      font-family: 'Century Gothic', sans-serif;
+      font-size: 12pt;
+      border-radius: 5px;
+      border: 0;
+      background-color: #F2704F
     }
-
-
     .bottonButtons {
       text-align: center;
+      color: white;
     }
 
     p {
-      font-family: 'PT Sans Narrow', sans-serif;
+      font-family: 'Century Gothic', sans-serif;
       font-size: 16px;
       text-align: center;
     }
 
   </style>
-
-  <header id="instructions">Thank You</header>
+<div class="sizebox">
+  <header id="instructions">THANK YOU</header>
   <p>
   Thank you for your donation. A confirmation email has been sent.
   </p>
+  </div>
   
   <div class="bottonButtons">
-    <button id="home" class="btn-lg btn-default" onclick="location.href='./HomePage.html';">Home</button>
+    <button id="home" onclick="location.href='./HomePage.html';">Home</button>
 </div>
 
 </div>

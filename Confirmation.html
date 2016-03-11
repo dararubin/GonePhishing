@@ -1,44 +1,44 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-  <nav class="navbar navbar-inverse navbar-static-top">
-    <div class="container">
-      <div class="navbar-header">
-        <a class="navbar-brand" href="./HomePage.html" id="title">iDonate</a>
+  <nav class="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="./HomePage.html" id="title">iDonate</a>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
 
   <div class="container">
+  
+  <style>
 
-    <style>
-    
-    #title {
-      color: #ec2227;
+  nav {
+      background: #93CBD2;
+      margin-bottom: 15px;
+      font-family: 'Century Gothic', sans-serif;
+    }
+
+    a {
+      color: white;
     }
 
     #instructions {
-      font-family: 'PT Sans Narrow', sans-serif;
+      font-family: 'Century Gothic', sans-serif;
       font-size: 24px;
       font-weight: 500;
       text-align: center;
       margin: 0 0 20px;
     }
 
-    #cancel, #continue {
-      margin: 15px;
-      border-style: solid;
-      border-width: 1px
-    }
-
     #label {
       text-align: right;
       padding-right: 6px;
       font-size: 14px;
-      font-weight: 500;
+      font-weight: bold;
     }
 
     #info {
@@ -46,24 +46,43 @@
       font-size: 14px;
     }
 
-    .bottonButtons {
+    #cancel {
+      background-color: #93CBD2
+    }
+
+    #continue {
+      background-color: #F2704F
+    }
+
+    .bottonButtons{ 
       text-align: center;
+      color: white;
     }
 
     table {
-      font-family: 'PT Sans Narrow', sans-serif;
+      font-family: 'Century Gothic', sans-serif;
     }
 
     #address {
       text-align: right;
       padding-right: 6px;
-      padding-bottom: 39px;
+      padding-bottom: 41px;
       font-size: 14px;
-      font-weight: 500;
+      font-weight: bold;
+    }
+
+    .bottonButtons button {
+      font-family: 'Century Gothic', sans-serif;
+      height: 30px;
+      margin: 4px;
+      font-size: 12pt;
+      border-radius: 5px;
+      border: 0;
+      color:white;
     }
 
     </style>
-
+<div class="sizebox">
     <header id="instructions">CONFIRM PICK UP</header>
 
 
@@ -71,7 +90,7 @@
       <table align="center">
         <tr>
           <td id="label">Organization:</td>
-          <td id="info">YWCA Evanston/North Shore</td>
+          <td id="info">Evanston School Children Clothing Association</td>
         </tr>
         <tr>
           <td id="label">Date:</td>
@@ -105,13 +124,11 @@
         </tr>
       </table>
     </div>
+    </div>
     
     <div class="bottonButtons">
-      <a href="Registration_2.html">
-        <button id="cancel" class="btn-lg btn-default">Cancel</button>
-      </a>
-      <a href="Thank_you.html"> <button id="continue" class="btn-lg btn-default">Confirm</button>
-      </a>
+       <button id="cancel" onclick="location.href='./map.html';">Cancel</button>
+      <button id="continue" onclick="location.href='./Thank_you.html';">Confirm</button>
     </div>
 
   </div>

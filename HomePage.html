@@ -1,30 +1,82 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link href="css/bootstrap.min.css" rel="stylesheet">
-<link type="text/css" rel="stylesheet" href="HomePage.css"/>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 </head>
 <body>
-	<nav class="navbar navbar-inverse navbar-static-top">
-      <div class="container">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="./HomePage.html" id="title">iDonate</a>
-        </div>
+  <nav class="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="./HomePage.html" id="title">iDonate</a>
       </div>
-    </nav>
-
-	<div class="container">
-
-    <div class="centered">
-       <button type="button" style="margin-top:100px" class="donation" class="btn btn-lg btn-default" onclick="location.href='./ZipCode.html';">Donate</button>
     </div>
-    <div class="centered">
-        <button type="button" style="margin-top:120px" class="center" class="btn btn-lg btn-default" onclick="location.href='./DonationLogIn.html';">Donation Centers, Click Here</button>
-    </div>
+  </nav>
+  <div class="container">
 
+  <style>
+    nav {
+      background: #93CBD2;
+      margin-bottom: 15px;
+      font-family: 'Century Gothic', sans-serif;
+    }
+
+    a {
+      color: white;
+    }
+
+.login-page {
+  width: 360px;
+  padding: 8% 0 0;
+  margin: auto;
+}
+.form {
+  position: relative;
+  background: #FFFFFF;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+}
+
+img {
+      height: 100%;
+      width: 100%;
+    }
+
+button {
+  font-family: 'Century Gothic', sans-serif;
+  outline: 0;
+  background: #F2704F;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: white;
+  font-size: 12pt;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+#donation_worker {
+  background: #93CBD2;
+}
+
+body {
+  background: #2B5C62;
+  }
+</style>
+
+<div class="login-page">
+  <div class="form">
+     <button id="donation" onclick="location.href='./ZipCode1.html';">Make a Donation</button>
+      <button id="donation_worker" onclick="location.href='./DonationLogIn2.html';">Donation Center Login</button>
+      <img src="donation-pick-up.png" alt="Donation Picture">
   </div>
+</div>
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 
 </body>

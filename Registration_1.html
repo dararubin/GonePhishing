@@ -5,7 +5,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 </head>
 <body>
-	<nav class="navbar navbar-inverse navbar-static-top">
+	<nav class="navigation">
     <div class="container">
       <div class="navbar-header">
         <a class="navbar-brand" href="./HomePage.html" id="title">iDonate</a>
@@ -16,31 +16,49 @@
   <div class="container">
 
     <style>
-    
-    #title {
-      color: #ec2227;
+    nav {
+      background: #93CBD2;
+      margin-bottom: 15px;
+      font-family: 'Century Gothic', sans-serif;
+    }
+
+    a {
+      color: white;
     }
 
     #instructions {
-      font-family: 'PT Sans Narrow', sans-serif;
+      font-family: 'Century Gothic', sans-serif;
       font-size: 24px;
       font-weight: 500;
       text-align: center;
       margin: 0 0 20px;
     }
 
-    #cancel, #continue {
-      margin: 15px;
-      border-style: solid;
-      border-width: 1px
+    #cancel {
+      background-color: #93CBD2
+    }
+
+    #continue {
+      background-color: #F2704F
     }
 
     .bottonButtons{ 
       text-align: center;
+      font-family: 'PT Sans', sans-serif;
+    }
+
+    .bottonButtons button {
+      font-family: 'Century Gothic', sans-serif;
+      height: 30px;
+      margin: 4px;
+      font-size: 12pt;
+      border-radius: 5px;
+      border: 0;
+      color:white;
     }
 
     h1 {
-      font-family: 'PT Sans Narrow', sans-serif;
+      font-family: 'PT Sans', sans-serif;
       font-size: 18px;
       font-weight: 700;
       text-align: center;
@@ -58,21 +76,27 @@
     }
 
     input[type=text]{
-      font-family: 'PT Sans Narrow', sans-serif;
+      font-family: 'Century Gothic', sans-serif;
       width: 200px; 
       height: 38px; 
-      border: solid 1px #cbc9c9;
+      outline: 0;
+      border: 0;
+      background: #f2f2f2;
       margin-left: -5px;
       margin-top: 10px; 
       padding-left: 10px;
       border-radius: 4px;
+      font-size: 13px;
     }
 
     select {
-      font-family: 'PT Sans Narrow', sans-serif;
-      width: 200px; 
+      font-family: 'Century Gothic', sans-serif;
+      width: 200px;
+      font-size: 13px; 
       height: 38px; 
-      border: solid 1px #cbc9c9;
+      outline: 0;
+      border: 0;
+      background: #f2f2f2;
       margin-left: -5px;
       margin-top: 12px; 
       padding-left: 10px;
@@ -81,21 +105,22 @@
 
     #icon {
       width: 40px;
-      background-color: #8C8C8C;
+      background-color: #A2CE69;
       padding: 8px 0px 8px 15px;
       margin-left: 15px;
       margin-right: 5px;
       border-radius: 4px;
-      color: white;
+      color:white;
     }
 
     #confirm_check {
-      font-family: 'PT Sans Narrow', sans-serif;
+      font-family: 'PT Sans', sans-serif;
       text-align: center;
     }
 
     #my_check{
       font-weight:normal;
+      font-family: 'Century Gothic', sans-serif;
     }
 
     input[type=checkbox] {
@@ -109,19 +134,19 @@
       height: 15px;  
       vertical-align:middle;
       margin-right: 8px;  
-      background-color: #ddd;
+      background-color: #F2704F;
       border-radius: 4px;
     }
 
     input[type=checkbox]:checked + label:before {
       content:"\2714";
       color:white;
-      background-color: #8C8C8C; 
+      background-color: #F2704F; 
       text-align:center;
       line-height:15px;
     }
     </style>
-
+<div class="sizebox">
     <header id="instructions">PICK UP INFORMATION</header>
 
     <div class="testbox">
@@ -129,16 +154,16 @@
       <h2> </h2>
       <form action="/">
         <label id="icon"><i class="fa fa-user"></i></label>
-        <input type="text" placeholder="First Name *" required/>
+        <input type="text" placeholder="First Name" required/>
         <label id="icon"><i class="fa fa-user"></i></label>
-        <input type="text" placeholder="Last Name *" required/>
+        <input type="text" placeholder="Last Name" required/>
         <label id="icon"><i class="fa fa-phone"></i></label>
-        <input type="text" placeholder="Phone Number *" required/>
+        <input type="text" placeholder="Phone Number" required/>
         <label id="icon"><i class="fa fa-envelope"></i></label>
-        <input type="text" placeholder="Email *"required/>
+        <input type="text" placeholder="Email"required/>
         <label id="icon"><i class="fa fa-heart"></i></label>
         <select required>
-         <option>Select Donation Category *</option>
+         <option>Select Donation Category</option>
          <option>Clothing</option>
          <option>Food</option>
          <option>Books</option>
@@ -153,16 +178,12 @@
     <input type="checkbox" id="cb2" name="cb" value="" checked>
     <label id="my_check" for="cb2">Send me an email reminder about my donation.</label><br>
   </div>
+  </div>
   
   <div class="bottonButtons">
-    <a href="map.info">
-      <button id="cancel" class="btn-lg btn-default">Cancel</button>
-    </a>
-    <a href="Registration_2.html">
-      <button id="continue" class="btn-lg btn-default">Confirm</button>
-    </a>
+    <button id="cancel" onclick="location.href='./map.html';">Cancel</button>
+    <button id="continue" onclick="location.href='./Registration_2.html';">Continue</button>
   </div>
-
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>

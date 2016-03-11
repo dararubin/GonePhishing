@@ -2,10 +2,9 @@
 <html>
 <head>
 <link href="css/bootstrap.min.css" rel="stylesheet">
-<link href="map-info.css" rel="stylesheet">
 </head>
 <body>
-  <nav class="navbar navbar-inverse navbar-static-top">
+  <nav class="navigation">
     <div class="container">
       <div class="navbar-header">
         <a class="navbar-brand pt-sans" id="title" href="./HomePage.html">iDonate</a>
@@ -13,10 +12,47 @@
     </div>
   </nav>
 
-	<div class="container center pt-sans" id="content">
+	<div class="container center" id="content">
+  <style>
+    nav {
+      background: #93CBD2;
+      margin-bottom: 15px;
+      font-family: 'Century Gothic', sans-serif;
+    }
+
+    a {
+      color: white;
+    }
+
+    body {
+      font-family: 'Century Gothic', sans-serif;
+      text-align: center;
+    }
+
+    button {
+      margin: 4px;
+      height: 30px;
+      border-style: solid;
+      border-width: 1px;
+      font-family: 'Century Gothic', sans-serif;
+      font-size: 12pt;
+      border-radius: 5px;
+      border: 0;
+      background-color: #F2704F
+    }
+
+    #pickup {
+      color:white;
+    }
+
+    #quote {
+      font-size: 18px;
+    }
+</style>
+
     <div class="jumbotron">
-      <h2><u>Evanston School Children Clothing Association</u></h2>
-      <p><i>&quot;No child should miss a day of school for need of warm, sturdy clothing.&quot;</i></p>
+      <h2>EVANSTON SCHOOL CHILDREN CLOTHING ASSOCIATION</h2>
+      <p id="quote"><i>&quot;No child should miss a day of school for need of warm, sturdy clothing.&quot;</i></p>
     </div>
     <div class="row">
       <div class="col-md-4">
@@ -37,7 +73,7 @@
       </div>
     </div>
     <div>
-      <button class="btn btn-primary" type="button" onclick="location.href='./calendar.html'">Schedule pickup</button>
+      <button id="pickup" type="button" onclick="location.href='./calendar.html'">Schedule pickup</button>
     </div>
   </div>
 

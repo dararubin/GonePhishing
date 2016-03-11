@@ -1,22 +1,39 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-	<nav class="navbar navbar-inverse navbar-static-top">
-    <div class="container">
-      <div class="navbar-header">
-        <a class="navbar-brand" href="./HomePage.html" id="title">iDonate</a>
+  <nav class="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="./HomePage.html" id="title">iDonate</a>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
 
   <div class="container">
+
     <style>
 
-    #title {
-      color: #ec2227;
+    .bottonButtons button {
+      font-family: 'Century Gothic', sans-serif;
+      height: 30px;
+      margin: 4px;
+      font-size: 12pt;
+      border-radius: 5px;
+      border: 0;
+      background-color: #F2704F
+    }
+
+    nav {
+      background: #93CBD2;
+      margin-bottom: 15px;
+      font-family: 'Century Gothic', sans-serif;
+    }
+
+    a {
+      color: white;
     }
 
     body {
@@ -29,7 +46,7 @@
     }
 
     #instructions {
-      font-family: 'PT Sans Narrow', sans-serif;
+      font-family: 'Century Gothic', sans-serif;
       font-size: 24px;
       font-weight: 500;
       text-align: center;
@@ -37,7 +54,7 @@
     }
 
     #date h2 {
-      font-family: 'PT Sans Narrow', sans-serif;
+      font-family: 'PT Sans', sans-serif;
       font-size: 18px;
       font-weight: 700;
       margin: 0 0 10px;
@@ -46,14 +63,15 @@
     #date button {
       position: absolute;
       top: -4px;
-      border: 1px solid #8C8C8C;
+      border: 4px;
       border-radius: 6px;
-      background-color: white
+      background-color: white;
     }
 
     #left {
       left: 0;
     }
+
     #right {
       right: 0;
     }
@@ -71,28 +89,35 @@
       height: 30px;
     }
     #Month td {
+      font-family: 'Century Gothic', sans-serif;
       color: #222;
       font-weight: 700;
     }
-    #d19 {
-      background: #8C8C8C;
+    #d13 {
+      background: #F2704F;
       border: 0;
+      color: white;
     }
 
     #d1, #d31, #d32, #d33, #d34, #d35 {
       color:#ddd;
     }
 
-    #cancel, #continue {
-      margin: 15px;
-      border-style: solid;
-      border-width: 1px
+    #cancel {
+      background-color: #93CBD2
+    }
+
+    #continue {
+      background-color: #F2704F
     }
 
     .bottonButtons{ 
       text-align: center;
+      color: white;
     }
+
     </style>
+    <div class="sizebox">
 
     <header id="instructions">PICK A DATE</header>
 
@@ -158,15 +183,11 @@
         <td id="d35">5</td>
       </tr>
     </table>
-
+    </div>
     <div class="bottonButtons">
-      <a href="map.html">
-        <button id="cancel" class="btn-lg btn-default">Cancel</button>
-      </a>
-      <a href="Times.html">
-        <button id="continue" class="btn-lg btn-default">Continue</button></a>
+        <button id="cancel" onclick="location.href='./map.html';">Cancel</button>
+        <button id="continue" onclick="location.href='./Times.html';">Continue</button>
       </div>
-
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
